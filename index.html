@@ -247,46 +247,7 @@
 	
 	 #a1 img{ width:10vw; }
 	 
-	 #svg {
-	  display: block;	  	 
-      //margin-left:10vw;	  
-	  //margin-top:calc(10vh - 40vw);
-	  position:absolute;	 
-	  top:30%;
-	  }
-	  
-	 .logo{
-	   //height: 400px;
-	   width:80vw;	
-	   right:calc(10vw);	
-	  }
-	  
-	  .rotate45{
-	    width:40vw;
-		right:calc(30vw);
-		top:calc(30% + 50px);
-		transform: rotate(-135deg);
-	}
-	.rotate135{
-	    width:40vw;
-		right:calc(30vw);
-		top:calc(30% + 50px);
-		transform: rotate(135deg);
-	}
-	.rotate45p{	  
-		top:calc(30% + 50px);
-	    width:40vw;
-		right:calc(30vw);	
-		transform: rotate(-45deg);
-	}
-	.rotate135p{
-	    width:40vw;
-		right:calc(30vw);
-		top:calc(30% + 50px);
-		transform: rotate(45deg);
-	}
-	
-	#ex1{
+	 #ex1{
 	  max-width: 80vw;
 	  max-height: 80vh;
 	} 
@@ -308,6 +269,41 @@
 	h3{font-size: 45px;}
 	#ex1 p{
 	 font-size: 40px;
+	}
+	
+	#svg {
+	  display: block;	  	 
+      //margin-left:10vw;	  
+	  //margin-top:calc(10vh - 40vw);
+	  position:absolute;	 
+	  top:30%;
+	  }
+	  
+	 .logo{
+	   //height: 400px;
+	   width:60vw;
+	   right:calc(20vw);	
+	  }
+	  
+	  .rotate45{
+	    width:40vw;
+		right:calc(30vw);		
+		transform: rotate(-135deg);
+	}
+	.rotate135{
+	    width:40vw;
+		right:calc(30vw);		
+		transform: rotate(135deg);
+	}
+	.rotate45p{	  		
+	    width:40vw;
+		right:calc(30vw);	
+		transform: rotate(-45deg);
+	}
+	.rotate135p{
+	    width:40vw;
+		right:calc(30vw);		
+		transform: rotate(45deg);
 	}
 }
 
@@ -807,8 +803,8 @@ $(document).ready(function(){
 	  $(".st1").click(function(){
 		//$("#svg").css({"transform": "rotate(45deg)"});
 		 $("#svg").removeClass('rotate45 rotate135 rotate45p rotate135p');		
-		 $("#svg").addClass('logo');	
 		 $("#cnt").removeClass('appear');
+		 $("#svg").addClass('logo');			 
 		 $("#cnt").addClass('hide');	
 	  });
 	});
